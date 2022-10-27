@@ -14,5 +14,9 @@ public class ResizeableTest {
         for(Geometry p:geometry){
             System.out.println(p.area()*Math.random()*100+1);
         }
+        for(Geometry p:geometry){
+            if(p instanceof Square){
+                ((Square) p).howToColor();
+            };
     }
-}
+}}
